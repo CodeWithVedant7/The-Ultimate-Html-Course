@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tables In Html</title>
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border: solid blueviolet;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        color: #333;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    caption {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Tables In Html</h1>
+<table>
+    <!--Head Of the Table-->
+    <thead>
+<tr>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Salary</th>
+</tr>
+    </thead>
+        <!--Body Of the Table-->
+        <tr>
+            <td>Vedant</td>
+            <td>Web Devloper</td>
+            <td>25000</td>
+        </tr>
+        <tr>
+            <td>Jay</td>
+            <td>Software Devloper</td>
+            <td>250000</td>
+        </tr>
+        <tr>
+            <td>Dhruvam</td>
+            <td>Software Devloper</td>
+            <td>250000</td>
+        </tr>
+        <tr>
+            <td>Tirth</td>
+            <td>Software Devloper</td>
+            <td>250000</td>
+        </tr>
+        <tr>
+            <td colspan="2">Thank</td>
+            <td>you</td>
+        </tr>
+
+    <tbody>
+
+    </tbody>
+</table>
+</body>
+</html>

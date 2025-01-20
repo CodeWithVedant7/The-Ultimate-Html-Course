@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 12px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-group-inline {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-group-inline .form-group {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit_admission.php" method="post">
+        <h1>School Admission Form</h1>
+
+        <div class="form-group">
+            <label for="student-name">Student's Full Name:</label>
+            <input type="text" id="student-name" name="student_name" placeholder="Enter student's name" required>
+        </div>
+
+        <div class="form-group-inline">
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="grade">Applying for Grade:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Select Grade</option>
+                <option value="kg">Kindergarten</option>
+                <option value="1">1st Grade</option>
+                <option value="2">2nd Grade</option>
+                <option value="3">3rd Grade</option>
+                <option value="4">4th Grade</option>
+                <option value="5">5th Grade</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="parent-name">Parent/Guardian Name:</label>
+            <input type="text" id="parent-name" name="parent_name" placeholder="Enter parent/guardian name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact_number" placeholder="Enter contact number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter full address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="additional-info">Additional Information (optional):</label>
+            <textarea id="additional-info" name="additional_info" rows="4" placeholder="Enter any additional information"></textarea>
+        </div>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
