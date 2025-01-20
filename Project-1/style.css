@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #e60000;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100px;
+}
+
+.tagline {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcccb;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-btn img {
+    width: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: 20px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.reason-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reason-card {
+    width: 200px;
+    text-align: center;
+}
+
+.reason-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-us button {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e60000;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
