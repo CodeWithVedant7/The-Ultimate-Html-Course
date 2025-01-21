@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="SchoolLogin.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>School Admission Form</h1>
+        <form action="#" method="POST">
+            <!-- Student Details -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <!-- Parent/Guardian Details -->
+            <label for="parent_name">Parent/Guardian Name</label>
+            <input type="text" id="parent_name" name="parent_name" placeholder="Enter parent/guardian name" required>
+            
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            
+            <!-- Academic Details -->
+            <label for="grade">Grade Applying For</label>
+            <select id="grade" name="grade" required>
+                <option value="">Select Grade</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+            
+            <label for="address">Home Address</label>
+            <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
