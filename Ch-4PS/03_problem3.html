@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Trip Booking</title>
+    <link rel="stylesheet" href="03_style.css">
+</head>
+<body>
+    <form action="submit_booking.php" method="post">
+        <h1>Bali Trip Booking</h1>
+
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group-inline">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="trip-duration">Trip Duration (Days):</label>
+            <input type="number" id="trip-duration" name="trip_duration" placeholder="Enter number of days" required>
+        </div>
+
+        <div class="form-group">
+            <label for="accommodation">Accommodation Type:</label>
+            <select id="accommodation" name="accommodation" required>
+                <option value="">Select Accommodation Type</option>
+                <option value="hotel">Hotel</option>
+                <option value="villa">Villa</option>
+                <option value="resort">Resort</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="arrival-date">Arrival Date:</label>
+            <input type="date" id="arrival-date" name="arrival_date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure_date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="special-request">Special Requests or Preferences:</label>
+            <textarea id="special-request" name="special_request" rows="4" placeholder="Enter any special requests or preferences"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="travel-package">Select Travel Package:</label>
+            <select id="travel-package" name="travel_package" required>
+                <option value="">Select a Package</option>
+                <option value="basic">Basic Package</option>
+                <option value="premium">Premium Package</option>
+                <option value="luxury">Luxury Package</option>
+            </select>
+        </div>
+
+        <button type="submit">Book Trip</button>
+    </form>
+</body>
+</html>
